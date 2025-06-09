@@ -1,0 +1,23 @@
+@EndUserText.label: 'Read Only E2E : SD for managing flights'
+@ObjectModel.leadingEntity.name: '/DMO/I_Connection_R'
+define service ZSMIT_FLIGHT_R {
+  expose ZSMIT_I_CONNECTION_R          as connection;
+  expose ZSMIT_I_FLIGHT_R              as Flight;
+  expose ZSMIT_I_Carrier_R             as Airline;
+  expose ZSMIT_I__Airport              as Airport;
+  expose ZSMIT_C_Travel_Processor_M    as Travel;
+  expose ZSMIT_C_Booking_Processor_M   as Booking;
+  expose ZSMIT_C_BookSuppl_Processor_M as BookingSupplement;
+  expose /DMO/I_Supplement_StdVH       as Supplement;
+  expose /DMO/I_SupplementCategory_VH  as SupplementCategory;
+  expose /DMO/I_Customer_StdVH         as Passenger;
+  expose /DMO/I_Agency_StdVH           as TravelAgency;
+  expose /DMO/I_Carrier_StdVH          as Airline_VH;
+  expose /DMO/I_Connection_StdVH       as FlightConnection;
+  expose /DMO/I_Flight_StdVH           as Flight_VH;
+  expose /DMO/I_Airport_StdVH          as Airport_VH;
+  expose /DMO/I_Overall_Status_VH      as OverallStatus;
+  expose /DMO/I_Booking_Status_VH      as BookingStatus;
+  expose I_CurrencyStdVH               as Currency;
+  expose I_CountryVH                   as Country;
+}
